@@ -134,6 +134,12 @@ html:focus-within {
 
 .arrow-down {
   margin-left: auto;
+  transition: all 0.4s ease;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  transition: all 0.4s ease;
 }
 
 /* ---- i finally was able to add transition to a react app, thanks to  https://stackoverflow.com/questions/50789876/css-transitions-in-react-not-working-when-state-becomes-true */

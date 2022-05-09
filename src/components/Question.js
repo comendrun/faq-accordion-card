@@ -12,16 +12,20 @@ export default function Question(props) {
 
   return (
     <div className="each-collapsible">
-      <section className="Q-A">
+      <div className="Q-A">
         <p
           onClick={handleAnswerClick}
           className={`question ${showAnswer && "question-selected"}`}
         >
           {props.question}
-          <img className="arrow-down" src={arrowDown} alt="arrow-down" />
+          <img
+            className={`arrow-down ${showAnswer && "arrow-up"}`}
+            src={arrowDown}
+            alt="arrow-down"
+          />
         </p>
         <p className={`answer ${!showAnswer && "hidden"}`}>{props.answer}</p>
-      </section>
+      </div>
       <hr className="line" />
     </div>
   );
